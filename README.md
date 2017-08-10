@@ -80,6 +80,13 @@ Open the "hpsdr_multirx_config.png" file that should accompany this
 README.  It shows the flowgraph with some cribnotes on the changes you
 might want to make.  Here are more details about those selections:
 
+	* Note that some versions of Linux assign different interface
+	  names to the ethernet connection.  The HermesNB block will show
+	  what interfaces it thinks are available, or you can issue the
+	  command "ifconfig" at Linux command prompt to see what's been
+	  assigned -- it's likely to be either "eth0" or on the newest
+	  OS versions something like "enXX".
+
 	* By default, the system is set up for four receivers.  You
 	  can increase the number by copy/pasting to create additional
 	  rx frequency and sink blocks, as well as adjusting the number
@@ -94,9 +101,19 @@ might want to make.  Here are more details about those selections:
 	* The working_dir variable should be set to the directory under
 	  which data files will be stored.
 
+	*  IMPORTANT: if you are using the standard Gnuradio file sink
+           blocks, the working directory must exist before the flowgraph
+	  is run.
+
 	* The metadata variable should be edited to include your call
 	  (or name), the receiver type, and a description of the antenna.
-	  Be careful to get the quote marks correct!
+	  The variable is in the form of a Python "dict".  The syntax
+	  is as follows: {key1:val1,key2:val2,key3:val3} with any key
+	  or value that is a string enclosed in single quotes.  I suggest
+	  the following format for the solar eclipse experiment:
+	  {'call':'your_call','grid:'your_grid','rx':'your_rx','ant':'your_ant'}
+	  Use six-character grid value if possible, and if you don't have a
+	  ham call, use your name instead.
 
 	* The rx_samp_rate variable should be set to match the "RX Sample
 	  Rate" setting in the HermesNB block.
