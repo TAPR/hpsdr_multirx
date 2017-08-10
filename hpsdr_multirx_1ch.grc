@@ -186,7 +186,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>{'call':'&lt;call&gt;','rx':'&lt;radio&gt;','ant':'&lt;antenna&gt;'}</value>
+      <value>{'call':'&lt;call&gt;','grid':'&lt;6-digit-grid&gt;','rx':'&lt;radio&gt;','ant':'&lt;antenna&gt;'}</value>
     </param>
   </block>
   <block>
