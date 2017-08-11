@@ -1,4 +1,4 @@
-hpsdr_multirx -- 06 August 2017 -- John Ackermann N8UR -- jra@febo.com
+hpsdr_multirx -- 11 August 2017 -- John Ackermann N8UR -- jra@febo.com
 
 The hpsdr_multirx.grc Gnuradio flowgraph allow SDR receivers that support
 the HPSDR "old protocol" to record semi-wideband (384ksample/second)
@@ -35,7 +35,7 @@ tested that.
 
 	* Issue these commands:
 		cd ~/gr-projects
-		git clone https://github.com/Tom_McDermott/gr-hpsdr
+		git clone https://github.com/Tom-McDermott/gr-hpsdr.git
 		cd gr-hpsdr
 		mkdir build 
 		cd build 
@@ -47,9 +47,7 @@ tested that.
 4.  The MIT-Haystack "Digital RF" blocks.  Here is how to install them:
 
 	* Issue this command to install dependencies:
-		sudo apt-get install Build: libhdf5-dev python-dev
-		python-numpy gnuradio-dev libboost-dev swig python-h5py
-		libhdf5 pytz python-dateutil
+		sudo apt-get install Build: libhdf5-dev python-dev python-numpy gnuradio-dev libboost-dev swig python-h5pylibhdf5 pytz python-dateutil
 	  (Some of these will probably be already installed)
 
 	* Issue these commands:
