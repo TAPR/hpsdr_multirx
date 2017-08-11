@@ -24,8 +24,8 @@ tested that.
 
 2.  The standard development environment plus tools needed for gnuradio.
     Install them with:
-	sudo apt-get install build-essential
-	sudo apt-get build-dep gnuradio
+	* sudo apt-get install build-essential
+	* sudo apt-get build-dep gnuradio
 
 3.  N5EG, Tom McDermott's, gr-hpsdr blocks.   Here is how to install them:
 
@@ -34,15 +34,15 @@ tested that.
 	  instructions, but use whatever name you'd like.
 
 	* Issue these commands:
-		cd ~/gr-projects
-		git clone https://github.com/Tom-McDermott/gr-hpsdr.git
-		cd gr-hpsdr
-		mkdir build 
-		cd build 
-		cmake ..
-		make 
-		sudo make install 
-		sudo ldconfig 
+		* cd ~/gr-projects
+		* git clone https://github.com/Tom-McDermott/gr-hpsdr.git
+		* cd gr-hpsdr
+		* mkdir build 
+		* cd build 
+		* cmake ..
+		* make 
+		* sudo make install 
+		* sudo ldconfig 
 
 4.  The MIT-Haystack "Digital RF" blocks.  Here is how to install them:
 
@@ -51,15 +51,15 @@ tested that.
 	  (Some of these will probably be already installed)
 
 	* Issue these commands:
-		cd ~/gr-projects
-		git clone https://github.com/MITHaystack/digital_rf.git
-		cd digital_rf
-		mkdir build
-		cd build
-		cmake ..
-		make
-		sudo make install
-		sudo ldconfig
+		* cd ~/gr-projects
+		* git clone https://github.com/MITHaystack/digital_rf.git
+		* cd digital_rf
+		* mkdir build
+		* cd build
+		*cmake ..
+		* make
+		* sudo make install
+		* sudo ldconfig
 
 Once these blocks have been installed, the hpsdr_multirx program should
 be ready to run.  You can run the Gnuradio Companion (grc) program from
