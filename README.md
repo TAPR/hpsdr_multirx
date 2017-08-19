@@ -1,4 +1,4 @@
-hpsdr_multirx -- 06 August 2017 -- John Ackermann N8UR -- jra@febo.com
+hpsdr_multirx -- 11 August 2017 -- John Ackermann N8UR -- jra@febo.com
 
 The hpsdr_multirx.grc Gnuradio flowgraph allow SDR receivers that support
 the HPSDR "old protocol" to record semi-wideband (384ksample/second)
@@ -24,8 +24,8 @@ tested that.
 
 2.  The standard development environment plus tools needed for gnuradio.
     Install them with:
-	sudo apt-get install build-essential
-	sudo apt-get build-dep gnuradio
+	* sudo apt-get install build-essential
+	* sudo apt-get build-dep gnuradio
 
 3.  N5EG, Tom McDermott's, gr-hpsdr blocks.   Here is how to install them:
 
@@ -34,6 +34,7 @@ tested that.
 	  instructions, but use whatever name you'd like.
 
 	* Issue these commands:
+<<<<<<< HEAD
 		cd ~/gr-projects
 		git clone https://github.com/Tom-McDermott/gr-hpsdr
 		cd gr-hpsdr
@@ -43,25 +44,40 @@ tested that.
 		make 
 		sudo make install 
 		sudo ldconfig 
+=======
+		* cd ~/gr-projects
+		* git clone https://github.com/Tom-McDermott/gr-hpsdr.git
+		* cd gr-hpsdr
+		* mkdir build 
+		* cd build 
+		* cmake ..
+		* make 
+		* sudo make install 
+		* sudo ldconfig 
+>>>>>>> 2573c110e19557d1504ea91b40c6b4d06e020149
 
 4.  The MIT-Haystack "Digital RF" blocks.  Here is how to install them:
 
 	* Issue this command to install dependencies:
+<<<<<<< HEAD
 		sudo apt-get install libhdf5-dev python-dev
 		python-numpy gnuradio-dev libboost-dev swig python-h5py
 		python-tz python-dateutil python-setuptools
+=======
+		sudo apt-get install Build: libhdf5-dev python-dev python-numpy gnuradio-dev libboost-dev swig python-h5pylibhdf5 pytz python-dateutil
+>>>>>>> 2573c110e19557d1504ea91b40c6b4d06e020149
 	  (Some of these will probably be already installed)
 
 	* Issue these commands:
-		cd ~/gr-projects
-		git clone https://github.com/MITHaystack/digital_rf.git
-		cd digital_rf
-		mkdir build
-		cd build
-		cmake ..
-		make
-		sudo make install
-		sudo ldconfig
+		* cd ~/gr-projects
+		* git clone https://github.com/MITHaystack/digital_rf.git
+		* cd digital_rf
+		* mkdir build
+		* cd build
+		*cmake ..
+		* make
+		* sudo make install
+		* sudo ldconfig
 
 Once these blocks have been installed, the hpsdr_multirx program should
 be ready to run.  You can run the Gnuradio Companion (grc) program from
