@@ -70,7 +70,7 @@ a system based on Ubuntu 16.04/Linux Mint 18 or later.
 		python-tz python-dateutil python-setuptools
 		sudo apt-get install Build: libhdf5-dev python-dev
 		python-numpy gnuradio-dev libboost-dev swig python-h5py
-		libhdf5 pytz python-dateutil
+		libhdf5 pytz python-dateutil python-setuptools
 
 	  (Some of these will probably be already installed)
 
