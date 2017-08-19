@@ -41,7 +41,6 @@ a system based on Ubuntu 16.04/Linux Mint 18 or later.
 	  instructions, but use whatever name you'd like.
 
 	* Issue these commands:
-<<<<<<< HEAD
 		cd ~/gr-projects
 		git clone https://github.com/Tom-McDermott/gr-hpsdr
 		cd gr-hpsdr
@@ -51,28 +50,28 @@ a system based on Ubuntu 16.04/Linux Mint 18 or later.
 		make 
 		sudo make install 
 		sudo ldconfig 
-=======
-		* cd ~/gr-projects
-		* git clone https://github.com/Tom-McDermott/gr-hpsdr.git
-		* cd gr-hpsdr
-		* mkdir build 
-		* cd build 
-		* cmake ..
-		* make 
-		* sudo make install 
-		* sudo ldconfig 
->>>>>>> 2573c110e19557d1504ea91b40c6b4d06e020149
+
+	* cd ~/gr-projects
+	* git clone https://github.com/Tom-McDermott/gr-hpsdr.git
+	* cd gr-hpsdr
+	* mkdir build 
+	* cd build 
+	* cmake ..
+	* make 
+	* sudo make install 
+	* sudo ldconfig 
 
 4.  The MIT-Haystack "Digital RF" blocks.  Here is how to install them:
 
 	* Issue this command to install dependencies:
-<<<<<<< HEAD
+
 		sudo apt-get install libhdf5-dev python-dev
 		python-numpy gnuradio-dev libboost-dev swig python-h5py
 		python-tz python-dateutil python-setuptools
-=======
-		sudo apt-get install Build: libhdf5-dev python-dev python-numpy gnuradio-dev libboost-dev swig python-h5pylibhdf5 pytz python-dateutil
->>>>>>> 2573c110e19557d1504ea91b40c6b4d06e020149
+		sudo apt-get install Build: libhdf5-dev python-dev
+		python-numpy gnuradio-dev libboost-dev swig python-h5py
+		libhdf5 pytz python-dateutil
+
 	  (Some of these will probably be already installed)
 
 	* Issue these commands:
