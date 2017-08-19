@@ -15,12 +15,19 @@ for six, three, and two channels.
 These programs rely on:
 
 1.  Gnuradio installed on a Linux computer.  Development was done 
-on a Linux Mint 18.1 system with the standard gnuradio ".deb" 
+on a Linux Mint 18.2 system with the standard gnuradio ".deb" 
 packages installed via apt-get, and the instructions below assume a
 debian-based system.  Other means of installing gnuradio may put
 files in different locations, so might require configuration changes.
 It should be possible to install on a Windows system, but I haven't 
 tested that.
+
+NOTE:  Building the digital_rf tools from MIT-Haystack requires version
+3.0 or later of the "cmake" tool.  Current versions of Ubuntu/Linux Mint
+include versions that work.  However, earlier versions such as Ubuntu 14.04
+or Mint 17.x have an earlier version.  There are weird conflicts if you
+try to install the new cmake on an older system.  The best bet is to use
+a system based on Ubuntu 16.04/Linux Mint 18 or later.
 
 2.  The standard development environment plus tools needed for gnuradio.
     Install them with:
