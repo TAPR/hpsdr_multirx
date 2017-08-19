@@ -35,7 +35,7 @@ tested that.
 
 	* Issue these commands:
 		cd ~/gr-projects
-		git clone https://github.com/Tom_McDermott/gr-hpsdr
+		git clone https://github.com/Tom-McDermott/gr-hpsdr
 		cd gr-hpsdr
 		mkdir build 
 		cd build 
@@ -47,9 +47,9 @@ tested that.
 4.  The MIT-Haystack "Digital RF" blocks.  Here is how to install them:
 
 	* Issue this command to install dependencies:
-		sudo apt-get install Build: libhdf5-dev python-dev
+		sudo apt-get install libhdf5-dev python-dev
 		python-numpy gnuradio-dev libboost-dev swig python-h5py
-		libhdf5 pytz python-dateutil
+		python-tz python-dateutil python-setuptools
 	  (Some of these will probably be already installed)
 
 	* Issue these commands:
