@@ -1010,7 +1010,7 @@
     </param>
     <param>
       <key>average</key>
-      <value>0.2</value>
+      <value>1.0</value>
     </param>
     <param>
       <key>bw</key>
@@ -1042,7 +1042,7 @@
     </param>
     <param>
       <key>fftsize</key>
-      <value>fft_size</value>
+      <value>1024</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1282,7 +1282,7 @@
     </param>
     <param>
       <key>ymax</key>
-      <value>0</value>
+      <value>-40</value>
     </param>
     <param>
       <key>ymin</key>
@@ -1616,7 +1616,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>10100000</value>
+      <value>1270000</value>
     </param>
   </block>
   <connection>
